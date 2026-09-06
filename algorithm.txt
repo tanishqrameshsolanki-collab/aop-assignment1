@@ -1,0 +1,15 @@
+Algorithm for Power Calculator:
+
+Step 1: Start
+Step 2: Declare variables for base, exponent, and the final answer.
+Step 3: Ask the user to enter the base number.
+Step 4: Ask the user to enter the exponent number.
+Step 5: Call the custom power() function with base and exponent as arguments.
+Step 6: Inside the power function:
+        a. Create a variable 'result' and set it to 1.
+        b. Run a loop starting from 1 up to the exponent value.
+        c. In each step of the loop, multiply 'result' by 'base'.
+        d. When the loop ends, return the 'result'.
+Step 7: Store the returned value in the answer variable.
+Step 8: Display the output in the format "base^exponent = answer".
+Step 9: Stop
