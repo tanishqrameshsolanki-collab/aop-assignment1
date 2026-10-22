@@ -1,0 +1,33 @@
+### Opening View
+"INSPECTOR | OPENING VIEW | No opening view saved | What visitors see when they enter this scene. | Use current | Preview"
+
+### Character
+"INSPECTOR | CHARACTER | Avatar | Leonard | See through walls | Keep the character visible when geometry passes in front of it."
+
+### Animations
+"INSPECTOR | CHARACTER | Avatar | Leonard | See through walls | Keep the character visible when geometry passes in front of it."
+
+### 3D Splat
+"INSPECTOR | TRANSFORM | Reset | Position | X | Y | Z | Rotation (°) | X | Y | Z | Flip 180° | X | Y | Z | Rotate the splat halfway around the selected axis. | Scale | Measure | REVEAL EFFECT | Magic | COLOR | Reset | Presets | Default | Sunny | Cloudy | Indoor | Night | Cinema | Save | Brightness | 0.00 | Contrast | 1.00 | Exposure | 0.00 | Saturation | 1.00 | Tone mapping | Black point | 0.00 | White point | 1.00 | Shadows | 0.00 | Highlights | 0.00 | Color balance | Temperature | 0.00 | Tint | 0.00 | PRIVACY | Soften neighbouring houses that weren’t part of the shoot. | Blur surroundings | Edit splat | Replace"
+
+### Environment
+"INSPECTOR | BACKDROP | None | Pure Sky | Outdoor Day | Coastal Dusk | Outdoor Snow | Rocky Night | Upload panorama | TOUR AMBIENCE | Browse | Upload Audio | Plays throughout the tour unless a scene overrides it. | THIS SCENE | Tour ambience | Use the tour-wide track | Different track | Override it here | No ambience | Silent in this scene"
+
+### Spatial Setup
+"INSPECTOR | SPATIAL SETUP | Floorplan | No plan attached | Walk collision | No authored primitives"
+
+### Hotspots
+"INSPECTOR | SPATIAL SETUP | Floorplan | No plan attached | Walk collision | No authored primitives"
+
+### Measure Distance
+"INSPECTOR | SPATIAL SETUP | Floorplan | No plan attached | Walk collision | No authored primitives  POPUP: SCENE GUIDE | Measure a distance | Check the distance between two points in the 3D scene. | 1 | Choose Measure distance and click the first point. | 2 | Click the second point to see the measured distance. | Written guide"
+
+### Reframe AI
+"INSPECTOR | SPATIAL SETUP | Floorplan | No plan attached | Walk collision | No authored primitives"
+
+### Add 3D Object
+"INSPECTOR | SPATIAL SETUP | Floorplan | No plan attached | Walk collision | No authored primitives  POPUP: ASSET LIBRARY | Place a 3D object | Choose an asset generated with Create Object 3D to place in the current scene. | No Create Object 3D assets found. | Close"
+
+### Add Animation
+"INSPECTOR | SPATIAL SETUP | Floorplan | No plan attached | Walk collision | No authored primitives  POPUP: Manual | Auto from hotspots"
+

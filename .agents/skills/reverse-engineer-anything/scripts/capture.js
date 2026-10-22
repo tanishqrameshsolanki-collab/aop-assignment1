@@ -1,0 +1,1 @@
+(()=>{window.__cap=[];const of=window.fetch;window.fetch=async function(i,o){const r=await of.apply(this,arguments);try{const u=typeof i==='string'?i:i.url;if(/rest\/v1\/rpc|functions\/v1/.test(u)){r.clone().text().then(t=>window.__cap.push({u:u.replace(/\?.*/,''),m:(o&&o.method)||'GET',req:o&&typeof o.body==='string'?o.body.slice(0,400):null,res:t}))}}catch(e){}return r}})();

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# evidence-validation <outdir>: fail on secrets; warn on missing confidence labels / unknowns file.
+d="${1:?outdir}"; rc=0
+pat='eyJ[A-Za-z0-9_-]{15,}\.[A-Za-z0-9_-]{10,}|ya29\.[A-Za-z0-9_-]{20,}|(access|refresh)_token=[^&"[:space:]R]|sk-[A-Za-z0-9]{20,}|Bearer [A-Za-z0-9._-]{20,}'
+if rg -l -e "$pat" "$d" 2>/dev/null; then echo "FAIL: secret-like strings found in files above"; rc=1; else echo "ok: no secret-like strings"; fi
+[ -f "$d/known-unknowns.md" ] && echo "ok: known-unknowns.md" || { echo "WARN: known-unknowns.md missing"; }
+for f in "$d"/architecture-report.md "$d"/feature-matrix.md; do [ -f "$f" ] || continue
+  rg -q -e 'Verified|Strongly supported|Inferred|Unknown' "$f" && echo "ok: confidence labels in $(basename $f)" || { echo "FAIL: no confidence labels in $f"; rc=1; }; done
+exit $rc
