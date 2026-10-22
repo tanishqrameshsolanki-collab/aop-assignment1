@@ -38,3 +38,13 @@ Anything requiring rendering (the sandbox had no GPU), splat generation, AI outp
 
 ## Recommended rebuild
 TypeScript + React + Vite. PlayCanvas engine (MIT) for splats. A single zustand store serialised to one design JSON. A depth-pick point picker. Supabase for persistence. See implementation-plan.md and test-plan.md.
+
+## Learned from their YouTube channel (51 videos; full notes in youtube-channel-notes.md)
+- Visitor measurement modes: Distance, Floor area and Wall area, in metres or feet, on desktop and mobile. They follow the scene scale.
+- Hotspots: Add Hotspot → anchor on the subject → "Use current view" saves the camera → marker Floating or Ground-anchored → content (text, links, images, audio, video/iframe embed) → layout as a screen panel or text in the scene. Smart Hotspots drafts text, icons and colours for selected anchors from context you type; you review the drafts.
+- Aerial setup: "Is the scene upright?" levelling, then orbit centre and near/far view limits (double-click recentres the orbit), opening view, ambient sound.
+- Camera animations: an Animations panel with keyframes, timing and FOV, a timeline with title text, and film export (up to 4K mentioned).
+- Floor plans: an AI route (mark a generation area, style prompt, uses credits) or manual tracing. Shown as a live minimap in the viewer.
+- Reframe AI: Template/custom prompt, strength slider, context, quality, then Create Reframe. Results can be saved or discarded as variations. Object 3D (beta) uses a brush.
+- Flight Plans: Google 3D map, stacked orbits (height, radius, heading), preview playback, downloadable capture-guide PDF. A Capture Guide can overlay the route on an existing splat.
+- Other: Matterport hybrid tours (Matterport opens from a hotspot), private share links with view stats and revoke, Spatial Sense (AI-detected objects), a Mac beta app (import footage, extract frames, train locally), LCC + LOD streaming, and builder tools (construction progress, unit selection with availability filters).
