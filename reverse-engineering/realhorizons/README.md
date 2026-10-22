@@ -23,6 +23,7 @@ Target: https://studio.realhorizons.ai/ (public surfaces only). Date: 2026-10-22
 | data-model.md | Entities and published design schema |
 | implementation-plan.md | Staged rebuild |
 | test-plan.md | Parity tests |
+| CONTEXT.md | One-page summary (loaded by CLAUDE.md) |
 | known-unknowns.md | Open questions |
 | authenticated-findings.md | Logged-in dashboard, editor, publish, plans |
 | evidence/ | Redacted request logs, schema paths, DOM dump |
