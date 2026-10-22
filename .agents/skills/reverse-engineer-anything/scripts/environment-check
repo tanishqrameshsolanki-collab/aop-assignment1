@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Reports tooling available for a web reverse-engineering run.
+ok(){ printf '  [ok]   %s\n' "$1"; }; no(){ printf '  [miss] %s\n' "$1"; }
+echo "reverse-engineer-anything environment check"
+for t in agent-browser node npx python3 rg jq curl gh; do command -v $t >/dev/null && ok "$t" || no "$t"; done
+command -v agent-browser >/dev/null && agent-browser --version 2>/dev/null | sed 's/^/  /'
+nproc | sed 's/^/  cpus: /'
+if [ -n "${1:-}" ]; then code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 20 "${1%%#*}"); echo "  target ${1%%#*} -> HTTP $code"; fi
+case "${1:-}" in *access_token=*|*refresh_token=*) echo "  WARNING: target URL contains auth tokens; strip the fragment and ask the user to revoke the session.";; esac

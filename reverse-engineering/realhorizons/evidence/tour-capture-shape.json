@@ -1,0 +1,48 @@
+{
+ "get_published_project_viewer_branding": {
+  "req_keys": [
+   "p_project_id"
+  ],
+  "res": [
+   {
+    "org_id": "'da9003ae-2375-46bd-8ce2-4139e0dfcd1a'",
+    "logo_url": "NoneType",
+    "watermark_required": "bool",
+    "custom_branding_enabled": "bool",
+    "white_label_enabled": "bool"
+   },
+   "len=1"
+  ]
+ },
+ "get_public_project_for_viewer": {
+  "req_keys": [
+   "p_project_id"
+  ],
+  "res": "str"
+ },
+ "tour-analytics": {
+  "req_keys": [
+   "action",
+   "projectId",
+   "publishedVersion",
+   "tourType",
+   "deviceType",
+   "trafficSource",
+   "accessSessionToken",
+   "protocolVersion"
+  ],
+  "res": {
+   "published_version": 10,
+   "analytics_session_id": "'81d2d4f3-6fe9-4ab1-990e-1c33ff2e4aa1'",
+   "analytics_session_token": "str",
+   "attention": {
+    "serverTime": "'2026-10-22T10:18:08.126974+00:00'",
+    "manifestVersion": 1,
+    "protocolVersion": 1,
+    "algorithmVersion": "'viewport-stencil-3x3-v1'",
+    "collectionEnabled": "bool",
+    "serverTimeUncertaintyMs": 0
+   }
+  }
+ }
+}

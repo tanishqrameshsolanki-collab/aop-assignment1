@@ -1,0 +1,1 @@
+(()=>{const o=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(t,...a){if(/webgl|webgpu/i.test(t)){window.__webglBlocked=(window.__webglBlocked||0)+1;return null}return o.call(this,t,...a)};if(navigator.gpu){try{Object.defineProperty(navigator,'gpu',{get:()=>undefined})}catch(e){}}})();
